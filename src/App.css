@@ -1,5 +1,22 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.App-UserName {
+  padding: 15px;
+  background-color: #1b1b1b;
+  color: #e8e806
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+  }
+  .App-UserName {
+    margin: 3px 0px;
+  }
 }
 
 .App-logo {
@@ -13,20 +30,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
